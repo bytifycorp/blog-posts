@@ -29,7 +29,7 @@
         "featured_image": "https://picsum.photos/1080",
         "author": "Prabhat",
         "slug": "BreakingBadHabitsAndFormingGoodHabits",
-        "readingTime": 7
+        "readingTime": 8
     },
     {
         "title": "Building Resilience and Mental Toughness -  A Guide to Thriving in the Face of Adversity",
@@ -39,13 +39,13 @@
             "resilience",
             "mental toughness"
         ],
-        "category": "Resilience&Coping",
+        "category": "ResilienceAndCoping",
         "date": "2024-08-14",
         "published": true,
         "featured_image": "https://picsum.photos/1080",
         "author": "Ramesh",
         "slug": "BuildingResilienceAndMentalToughness",
-        "readingTime": 41
+        "readingTime": 38
     },
     {
         "title": "Unlocking Your Inner Confidence -  A Comprehensive Guide to Building Lasting Self-Esteem",
@@ -93,7 +93,7 @@
         "featured_image": "https://picsum.photos/1080",
         "author": "Ramesh",
         "slug": "CareerDevelopmentStrategies",
-        "readingTime": 8
+        "readingTime": 7
     },
     {
         "title": "Conflict Resolution Strategies -  A Guide to Navigating Workplace Disputes",
@@ -109,7 +109,7 @@
         "featured_image": "https://picsum.photos/1080",
         "author": "Ramesh",
         "slug": "ConflictResolutionStrategies",
-        "readingTime": 9
+        "readingTime": 7
     },
     {
         "title": "Turning Criticism into Growth -  A Guide to Constructive Feedback",
@@ -157,7 +157,7 @@
         "featured_image": "https://picsum.photos/1080",
         "author": "Albert",
         "slug": "DevelopingPositiveThinkingHabits",
-        "readingTime": 12
+        "readingTime": 11
     },
     {
         "title": "Mastering the Art of Effective Communication -  A Comprehensive Guide to Building Stronger Connections",
@@ -173,7 +173,7 @@
         "featured_image": "https://picsum.photos/1080",
         "author": "Ramesh",
         "slug": "EffectiveCommunicationSkillsTechniques",
-        "readingTime": 22
+        "readingTime": 18
     },
     {
         "title": "Unlocking the Power of Networking -  A Comprehensive Guide to Building Meaningful Connections",
@@ -199,7 +199,7 @@
             "personal development",
             "goal setting"
         ],
-        "category": "Motivation&Goals",
+        "category": "MotivationAndGoals",
         "date": "2024-08-14",
         "published": true,
         "featured_image": "https://picsum.photos/1080",
@@ -215,7 +215,7 @@
             "energy boosting foods",
             "balanced diet"
         ],
-        "category": "Health&Wellness",
+        "category": "HealthAndWellness",
         "date": "2024-08-14",
         "published": true,
         "featured_image": "https://picsum.photos/1080",
@@ -423,7 +423,7 @@
             "focus",
             "brain health"
         ],
-        "category": "Health&Wellness",
+        "category": "HealthAndWellness",
         "date": "2024-08-14",
         "published": true,
         "featured_image": "https://picsum.photos/1080",
@@ -471,7 +471,7 @@
             "sleep quality",
             "sleep hygiene"
         ],
-        "category": "Health&Wellness",
+        "category": "HealthAndWellness",
         "date": "2024-08-14",
         "published": true,
         "featured_image": "https://picsum.photos/1080",
@@ -679,7 +679,7 @@
             "relaxation techniques",
             "deep breathing"
         ],
-        "category": "Health&Wellness",
+        "category": "HealthAndWellness",
         "date": "2024-08-14",
         "published": true,
         "featured_image": "https://picsum.photos/1080",

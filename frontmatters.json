@@ -1,5 +1,629 @@
 [
     {
+        "title": "Unlocking Your Potential -  The Power of Therapy for Mental Health",
+        "description": "Discover the science behind therapy and how it can help improve your mental health. Explore the benefits of therapy, different types of therapy, and what to expect from the process. Learn tips for getting the most out of therapy and find answers to frequently asked questions.",
+        "tags": [
+            "mental health",
+            "well-being",
+            "therapy"
+        ],
+        "category": "MentalHealth",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Sneh",
+        "slug": "BenefitsOfTherapyForMentalHealth",
+        "readingTime": 8
+    },
+    {
+        "title": "Trauma Survivors -  A Guide to Coping Strategies",
+        "description": "This blog post explores the impact of trauma and provides a comprehensive guide to coping strategies for trauma survivors. It covers various techniques, including bottom-up and top-down approaches, social support, self-care, and mindfulness practices.",
+        "tags": [
+            "mental health",
+            "healing",
+            "trauma"
+        ],
+        "category": "MentalHealth",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Ramesh",
+        "slug": "CopingStrategiesForTraumaSurvivors",
+        "readingTime": 6
+    },
+    {
+        "title": "Fuel Your Mind -  How Diet Can Boost Your Mental Well-being",
+        "description": "Discover the powerful connection between diet and mental health. Learn how to nourish your gut and brain with a balanced diet rich in whole foods, fruits, vegetables, and healthy fats to improve mood, reduce stress, and protect against mental health conditions.",
+        "tags": [
+            "mental health",
+            "well-being",
+            "diet"
+        ],
+        "category": "HealthAndWellness",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Albert",
+        "slug": "HowToBoostMentalWell-BeingWithDiet",
+        "readingTime": 6
+    },
+    {
+        "title": "The Power of Connection -  Building a Strong Support Network for a Fulfilling Life",
+        "description": "Discover the importance of a strong support network for your mental and physical well-being. Learn how to identify your needs, assess existing relationships, and build new connections to create a supportive community.",
+        "tags": [
+            "mental health",
+            "wellbeing",
+            "relationships"
+        ],
+        "category": "MentalHealth",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Prabhat",
+        "slug": "HowToBuildAStrongSupportNetwork",
+        "readingTime": 6
+    },
+    {
+        "title": "Mastering the Art of Coping -  A Comprehensive Guide to Building Healthy Mechanisms",
+        "description": "This blog post explores the different types of coping mechanisms, highlighting the difference between healthy and unhealthy coping strategies. It provides a comprehensive guide to building a toolbox of healthy coping skills to manage stress and difficult emotions.",
+        "tags": [
+            "mental health",
+            "wellbeing",
+            "stress management"
+        ],
+        "category": "MentalHealth",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Rina",
+        "slug": "HowToBuildHealthyCopingMechanisms",
+        "readingTime": 8
+    },
+    {
+        "title": "Depression -  A Guide to Understanding and Coping",
+        "description": "This blog post provides a comprehensive guide to understanding and coping with depression. It covers strategies for building a support network, reducing stress, challenging negative thinking, getting moving, getting a daily dose of sunlight, and supporting your health by eating and sleeping well.",
+        "tags": [
+            "mental health",
+            "wellbeing",
+            "coping mechanisms"
+        ],
+        "category": "MentalHealth",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Rina",
+        "slug": "HowToCopeWithDepression",
+        "readingTime": 6
+    },
+    {
+        "title": "Mental Health Treatment Plans -  Your Roadmap to Wellness",
+        "description": "A mental health treatment plan is a personalized roadmap to wellness that outlines your treatment goals, the steps you'll take to achieve them, and the support you'll need along the way. Learn about the benefits of a mental health treatment plan, how to prepare one, and what to expect during the process.",
+        "tags": [
+            "mental health",
+            "therapy",
+            "treatment plan"
+        ],
+        "category": "MentalHealth",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Prabhat",
+        "slug": "HowToCreateAMentalHealthCarePlan",
+        "readingTime": 9
+    },
+    {
+        "title": "Mindfulness -  A Simple Guide to Cultivating Inner Peace",
+        "description": "Discover the benefits of mindfulness and learn how to incorporate simple mindfulness practices into your daily routine to reduce stress, improve focus, and enhance your overall well-being.",
+        "tags": [
+            "well-being",
+            "mindfulness",
+            "meditation"
+        ],
+        "category": "Mindfulness",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Rina",
+        "slug": "HowToCreateAMindfulnessRoutine",
+        "readingTime": 8
+    },
+    {
+        "title": "How to Deal With Emotional Exhaustion",
+        "description": "Emotional exhaustion is a state of mental and emotional depletion that can leave you feeling drained, overwhelmed, and unable to cope with everyday demands. This blog post explores the causes, signs, and long-term impacts of emotional exhaustion, and provides practical tips for managing stress and recharging your emotional resources.",
+        "tags": [
+            "mental health",
+            "stress management",
+            "burnout"
+        ],
+        "category": "MentalHealth",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Sneh",
+        "slug": "HowToDealWithEmotionalExhaustion",
+        "readingTime": 12
+    },
+    {
+        "title": "Coping with Grief - A Guide to Healing",
+        "description": "This blog post explores the complex and multifaceted nature of grief, offering insights into common emotions, physical symptoms, and different types of grief. It provides practical strategies for coping with loss, finding support, and healing over time.",
+        "tags": [
+            "support",
+            "healing",
+            "grief"
+        ],
+        "category": "MentalHealth",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Prabhat",
+        "slug": "HowToDealWithGriefAndLoss",
+        "readingTime": 8
+    },
+    {
+        "title": "Overcoming Imposter Syndrome - A Guide to Feeling Confident",
+        "description": "Imposter syndrome is a common experience that affects people from all walks of life. It's that nagging feeling that you're not as smart, talented, or capable as others perceive you to be. This blog post explores the causes, signs, and impact of imposter syndrome and provides practical tips to overcome it.",
+        "tags": [
+            "mental health",
+            "anxiety",
+            "self-esteem"
+        ],
+        "category": "MentalHealth",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Ramesh",
+        "slug": "HowToDealWithImposterSyndrome",
+        "readingTime": 21
+    },
+    {
+        "title": "Loneliness - Understanding and Overcoming Isolation",
+        "description": "Loneliness is a common human experience, but it can have a significant impact on your mental and physical health. This blog post explores the causes and effects of loneliness and provides practical tips for coping with it and building stronger connections with others.",
+        "tags": [
+            "mental health",
+            "wellbeing",
+            "loneliness"
+        ],
+        "category": "MentalHealth",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Rina",
+        "slug": "HowToDealWithLoneliness",
+        "readingTime": 8
+    },
+    {
+        "title": "Toxic Relationships -  Recognizing the Signs and Taking Action",
+        "description": "Learn how to identify and deal with toxic relationships. This blog post explores the signs of toxicity, the impact of toxic relationships on your well-being, and provides practical steps to navigate and potentially leave these harmful connections.",
+        "tags": [
+            "mental health",
+            "well-being",
+            "relationships"
+        ],
+        "category": "Relationships",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Ramesh",
+        "slug": "HowToDealWithToxicRelationships",
+        "readingTime": 7
+    },
+    {
+        "title": "Positive Body Image - A Guide to Loving Your Body",
+        "description": "This blog post explores the concept of body image and how to develop a positive one. It covers the four elements of body image, common body image problems, and practical tips for improving your relationship with your body.",
+        "tags": [
+            "mental health",
+            "wellbeing",
+            "self-esteem"
+        ],
+        "category": "MentalHealth",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Sneh",
+        "slug": "HowToDevelopAPositiveBodyImage",
+        "readingTime": 15
+    },
+    {
+        "title": "Emotional Intelligence for Kids - A Guide for Parents and Educators",
+        "description": "Emotional intelligence (EQ) is crucial for children's success. Learn how to develop EQ in children through modeling, creating a safe space for emotions, using the mood meter, read-alouds, role-playing, and games.",
+        "tags": [
+            "emotional intelligence",
+            "children",
+            "parenting"
+        ],
+        "category": "Parenting",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Rina",
+        "slug": "HowToDevelopEmotionalIntelligenceInChildren",
+        "readingTime": 6
+    },
+    {
+        "title": "Finding Balance in Life - A Practical Guide",
+        "description": "Discover the true meaning of balance and learn practical strategies to achieve a sense of equilibrium in your life. This guide explores both internal and external elements of balance, providing actionable steps to find harmony in your mind, heart, health, work, social life, family, and fun.",
+        "tags": [
+            "well-being",
+            "mindfulness",
+            "lifestyle"
+        ],
+        "category": "MentalHealth",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Rina",
+        "slug": "HowToFindBalanceInLife",
+        "readingTime": 8
+    },
+    {
+        "title": "Understanding and Managing Panic Attacks",
+        "description": "This blog post explores panic attacks, their causes, and effective coping strategies. Learn the difference between panic attacks and panic disorder, and discover treatment options for managing these challenging experiences.",
+        "tags": [
+            "mental health",
+            "anxiety",
+            "coping mechanisms"
+        ],
+        "category": "MentalHealth",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Prabhat",
+        "slug": "HowToHandlePanicAttacks",
+        "readingTime": 7
+    },
+    {
+        "title": "Building Emotional Resilience - How to Bounce Back From Life's Challenges",
+        "description": "Discover the secrets to building emotional resilience and learn how to navigate life's challenges with greater strength and well-being. This comprehensive guide explores the key traits of resilient individuals, the factors that influence resilience, and practical strategies for developing this essential skill.",
+        "tags": [
+            "mental health",
+            "resilience",
+            "emotional resilience"
+        ],
+        "category": "MentalHealth",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Albert",
+        "slug": "HowToImproveEmotionalResilience",
+        "readingTime": 18
+    },
+    {
+        "title": "Unlocking Your Inner Focus -  A Comprehensive Guide to Sharpening Your Mind",
+        "description": "Discover the science behind focus, common reasons for struggling to concentrate, and effective techniques to improve your focus and concentration. Learn how to eliminate distractions, limit your focus, practice mindfulness, take short breaks, and keep practicing to achieve laser-like mental concentration.",
+        "tags": [
+            "mindfulness",
+            "focus",
+            "concentration"
+        ],
+        "category": "Productivity",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Sneh",
+        "slug": "HowToImproveFocusAndConcentration",
+        "readingTime": 8
+    },
+    {
+        "title": "Unlocking Mental Clarity -  A Guide to Sharpening Your Focus",
+        "description": "Feeling foggy and unfocused? This blog post explores the causes of brain fog and provides practical tips to improve mental clarity and sharpen your focus. Learn about the importance of breaks, sleep, diet, exercise, and mindfulness for a clearer mind.",
+        "tags": [
+            "focus",
+            "concentration",
+            "mental clarity"
+        ],
+        "category": "HealthAndWellness",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Rina",
+        "slug": "HowToImproveMentalClarity",
+        "readingTime": 6
+    },
+    {
+        "title": "Hobbies for Better Mental Health",
+        "description": "Discover the surprising ways hobbies can improve your mental health. Learn how engaging in activities you enjoy can reduce stress, boost your mood, improve sleep, and even prevent depression.",
+        "tags": [
+            "mental health",
+            "wellbeing",
+            "stress management"
+        ],
+        "category": "MentalHealth",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Sneh",
+        "slug": "HowToImproveMentalHealthThroughHobbies",
+        "readingTime": 7
+    },
+    {
+        "title": "Mental Health During a Pandemic - Tips for Thriving",
+        "description": "The pandemic has taken a toll on our mental health. This blog post provides practical strategies for managing anxiety, staying connected, and maintaining well-being during these challenging times.",
+        "tags": [
+            "mental health",
+            "wellbeing",
+            "pandemic"
+        ],
+        "category": "MentalHealth",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Prabhat",
+        "slug": "HowToMaintainMentalHealthDuringPandemic",
+        "readingTime": 6
+    },
+    {
+        "title": "AAdult ADHD - Managing Your Life and Thriving",
+        "description": "This blog post provides a comprehensive guide to managing adult ADHD, covering topics such as understanding the disorder, its causes and risk factors, diagnosis, treatment options, and practical tips for managing symptoms in various aspects of life.",
+        "tags": [
+            "ADHD",
+            "Adult ADHD",
+            "Mental Health"
+        ],
+        "category": "MentalHealth",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Rina",
+        "slug": "HowToManageAdhdInAdults",
+        "readingTime": 6
+    },
+    {
+        "title": "Anger Management -  A Guide to Taming the Beast Within",
+        "description": "Learn how to manage anger and frustration in a healthy way. This blog post explores the causes of anger, provides strategies for controlling it, and offers tips for seeking professional help when needed.",
+        "tags": [
+            "mental health",
+            "stress management",
+            "anger management"
+        ],
+        "category": "MentalHealth",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Prabhat",
+        "slug": "HowToManageAngerAndFrustration",
+        "readingTime": 8
+    },
+    {
+        "title": "Managing Anxiety Naturally - Techniques for a Calmer You",
+        "description": "Discover natural ways to manage anxiety and regain control over your emotions. This blog explores techniques like exercise, deep breathing, mindfulness, aromatherapy, and more, offering practical tips for a calmer, more fulfilling life.",
+        "tags": [
+            "mental health",
+            "wellbeing",
+            "anxiety"
+        ],
+        "category": "MentalHealth",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Rina",
+        "slug": "HowToManageAnxietyNaturally",
+        "readingTime": 7
+    },
+    {
+        "title": "Managing Holiday Stress and the Blues",
+        "description": "The holidays can be a stressful time for many, especially those with mental health concerns. This blog post provides tips on how to manage your mental health during the holidays, including setting realistic expectations, practicing self-care, setting boundaries, practicing gratitude, connecting with others, and seeking professional help.",
+        "tags": [
+            "mental health",
+            "anxiety",
+            "stress"
+        ],
+        "category": "MentalHealth",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Rina",
+        "slug": "HowToManageMentalHealthDuringHolidays",
+        "readingTime": 7
+    },
+    {
+        "title": "Mental Health at Work - A Guide to Thriving",
+        "description": "This blog post explores the importance of mental health in the workplace, providing practical advice and strategies for both individuals and organizations to create a healthier and more supportive work environment. It covers understanding the risks to mental health at work, protecting and promoting mental health, supporting employees with mental health challenges, and answering frequently asked questions.",
+        "tags": [
+            "mental health",
+            "wellbeing",
+            "support"
+        ],
+        "category": "MentalHealth",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Ramesh",
+        "slug": "HowToManageMentalHealthInTheWorkplace",
+        "readingTime": 6
+    },
+    {
+        "title": "Postpartum Depression - Understanding and Managing This Condition",
+        "description": "Postpartum depression is a common and treatable condition that affects women after childbirth. This blog post provides a comprehensive guide to understanding postpartum depression, including its symptoms, causes, risk factors, and treatment options. Learn about the difference between baby blues and postpartum depression, explore various therapies, and discover ways to prevent this condition.",
+        "tags": [
+            "mental health",
+            "postpartum depression",
+            "motherhood"
+        ],
+        "category": "MentalHealth",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Albert",
+        "slug": "HowToManagePostpartumDepression",
+        "readingTime": 9
+    },
+    {
+        "title": "Stress at Work -  How to Tame the Beast and Thrive",
+        "description": "Work stress is a common problem, but it doesn't have to control your life. This blog post explores the causes, symptoms, and strategies for managing work stress, helping you create a healthier, happier work environment for yourself.",
+        "tags": [
+            "mental health",
+            "wellbeing",
+            "stress management"
+        ],
+        "category": "MentalHealth",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Rina",
+        "slug": "HowToManageWorkStress",
+        "readingTime": 9
+    },
+    {
+        "title": "Unlocking Your Social Confidence - A Compassionate Guide to Understanding & Overcoming Social Anxiety",
+        "description": "This blog post provides a comprehensive guide to understanding and overcoming social anxiety. It covers the difference between social anxiety and social anxiety disorder, explores common signs and symptoms, and offers practical tips and strategies for managing anxiety, including challenging negative thoughts, practicing mindfulness, and adopting an anti-anxiety lifestyle.",
+        "tags": [
+            "mental health",
+            "anxiety",
+            "social anxiety"
+        ],
+        "category": "MentalHealth",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Rina",
+        "slug": "HowToOvercomeSocialAnxiety",
+        "readingTime": 7
+    },
+    {
+        "title": "Self-Compassion -  A Guide to Cultivating Kindness Towards Yourself",
+        "description": "Discover the power of self-compassion and learn how to practice it in your daily life. This blog post explores the benefits of self-compassion, common misconceptions, and practical tips for cultivating a kinder and more supportive relationship with yourself.",
+        "tags": [
+            "mental health",
+            "wellbeing",
+            "mindfulness"
+        ],
+        "category": "MentalHealth",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Albert",
+        "slug": "HowToPracticeSelfCompassion",
+        "readingTime": 8
+    },
+    {
+        "title": "Overthinking -  How to Stop Your Mind From Racing and Take Control",
+        "description": "Overthinking can be a major problem, leading to anxiety, stress, and even insomnia. Learn how to identify overthinking, challenge negative thoughts, and practice mindfulness to regain control of your mind.",
+        "tags": [
+            "anxiety",
+            "mindfulness",
+            "stress"
+        ],
+        "category": "MentalHealth",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Sneh",
+        "slug": "HowToStopOverthinking",
+        "readingTime": 6
+    },
+    {
+        "title": "Supporting a Loved One with Mental Illness - A Comprehensive Guide",
+        "description": "This blog post provides a comprehensive guide on how to support a loved one with a mental illness. It covers understanding the challenges, providing support, taking care of yourself, and navigating practicalities. It also includes helpful tips for building a support network and addresses frequently asked questions.",
+        "tags": [
+            "mental health",
+            "support",
+            "family"
+        ],
+        "category": "MentalHealth",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Albert",
+        "slug": "HowToSupportALovedOneWithMentalIllness",
+        "readingTime": 6
+    },
+    {
+        "title": "Journaling for Mental Wellbeing",
+        "description": "Discover the power of journaling for mental well-being. Learn how to start a journaling practice, explore its benefits for anxiety, stress, and depression, and find tips to deepen your journaling experience.",
+        "tags": [
+            "mental health",
+            "wellbeing",
+            "self-care"
+        ],
+        "category": "MentalHealth",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Rina",
+        "slug": "HowToUseJournalingForMentalHealth",
+        "readingTime": 11
+    },
+    {
+        "title": "Mental Health Awareness - Breaking the Silence",
+        "description": "Mental health awareness is crucial for breaking down stigma, promoting understanding, and increasing access to support. This blog explores the importance of mental health awareness, its impact on individuals and communities, and how we can all contribute to a more supportive environment.",
+        "tags": [
+            "mental health",
+            "wellbeing",
+            "awareness"
+        ],
+        "category": "MentalHealth",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Rina",
+        "slug": "ImportanceOfMentalHealthAwareness",
+        "readingTime": 6
+    },
+    {
+        "title": "Sleep - A Key to Mental Wellbeing",
+        "description": "Discover the crucial role of sleep in maintaining mental well-being. Learn how sleep deprivation impacts mood, behavior, and even the risk of developing mental health conditions. Explore the link between sleep and specific mental health disorders, and get tips for improving your sleep hygiene.",
+        "tags": [
+            "mental health",
+            "wellbeing",
+            "anxiety"
+        ],
+        "category": "MentalHealth",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Sneh",
+        "slug": "ImportanceOfRegularSleepForMentalHealth",
+        "readingTime": 5
+    },
+    {
+        "title": "Self-Care Routines - Your Guide to a Healthier, Happier You",
+        "description": "Discover the importance of self-care routines for a healthier and happier life. Learn about different types of self-care, how to create a routine, and examples of activities to incorporate into your daily life.",
+        "tags": [
+            "mental health",
+            "well-being",
+            "self-care"
+        ],
+        "category": "Wellness",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Sneh",
+        "slug": "ImportanceOfSelfCareRoutines",
+        "readingTime": 7
+    },
+    {
+        "title": "Burnout - Recognizing, Recovering, and Preventing Exhaustion",
+        "description": "Burnout is a serious condition that can affect your work, relationships, and overall well-being. Learn how to recognize the signs of burnout, understand the difference between stress and burnout, and discover effective strategies to recover from burnout and regain your energy, focus, and sense of well-being.",
+        "tags": [
+            "mental health",
+            "stress",
+            "burnout"
+        ],
+        "category": "MentalHealth",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Prabhat",
+        "slug": "SignsOfBurnoutAndHowToRecover",
+        "readingTime": 20
+    },
+    {
+        "title": "Mental Health Stigma - Understanding and Overcoming Prejudice",
+        "description": "This blog post explores the complex issue of mental health stigma, explaining its different types, harmful effects, and ways to cope with it. It also provides tips on how to challenge stigma and create a more inclusive society for everyone.",
+        "tags": [
+            "mental health",
+            "stigma",
+            "awareness"
+        ],
+        "category": "MentalHealth",
+        "date": "2024-08-15",
+        "published": true,
+        "featured_image": "https://picsum.photos/1080",
+        "author": "Prabhat",
+        "slug": "UnderstandingMentalHealthStigma",
+        "readingTime": 7
+    },
+    {
         "title": "Active Listening -  The Key to Building Stronger Relationships and Achieving Success",
         "description": "Active listening is a powerful communication skill that goes beyond simply hearing words. Learn the benefits of active listening, discover key techniques, and explore how to improve your active listening skills to build stronger relationships and achieve success.",
         "tags": [
@@ -30,22 +654,6 @@
         "author": "Prabhat",
         "slug": "BreakingBadHabitsAndFormingGoodHabits",
         "readingTime": 8
-    },
-    {
-        "title": "Building Resilience and Mental Toughness -  A Guide to Thriving in the Face of Adversity",
-        "description": "This blog post explores the concepts of resilience and mental toughness, providing practical strategies and activities to help you build these essential qualities. Learn how to overcome challenges, bounce back from setbacks, and thrive in the face of adversity.",
-        "tags": [
-            "wellbeing",
-            "resilience",
-            "mental toughness"
-        ],
-        "category": "ResilienceAndCoping",
-        "date": "2024-08-14",
-        "published": true,
-        "featured_image": "https://picsum.photos/1080",
-        "author": "Ramesh",
-        "slug": "BuildingResilienceAndMentalToughness",
-        "readingTime": 38
     },
     {
         "title": "Unlocking Your Inner Confidence -  A Comprehensive Guide to Building Lasting Self-Esteem",
@@ -608,22 +1216,6 @@
         "readingTime": 9
     },
     {
-        "title": "Unlocking Your Inner Confidence -  A Guide to Overcoming Shyness and Social Anxiety",
-        "description": "This comprehensive guide explores the difference between social anxiety and social anxiety disorder, outlines common symptoms, and provides practical strategies for coping with social anxiety in various settings, including the workplace and public speaking. It also highlights the importance of building internal resources through mindfulness, exercise, and cognitive-behavioral therapy.",
-        "tags": [
-            "social anxiety",
-            "shyness",
-            "anxiety"
-        ],
-        "category": "MentalHealth",
-        "date": "2024-08-14",
-        "published": true,
-        "featured_image": "https://picsum.photos/1080",
-        "author": "Sneh",
-        "slug": "OvercomingShynessAndSocialAnxiety",
-        "readingTime": 19
-    },
-    {
         "title": "The Power of Gratitude -  How to Cultivate Happiness and Well-being",
         "description": "Discover the science-backed benefits of practicing gratitude and learn practical tips to cultivate a more grateful mindset. Explore how gratitude can reduce stress, boost your mood, enhance your relationships, and even improve your physical health.",
         "tags": [
@@ -670,22 +1262,6 @@
         "author": "Sneh",
         "slug": "SpeedReadingTechniques",
         "readingTime": 9
-    },
-    {
-        "title": "Stress Management -  Your Guide to Finding Inner Peace",
-        "description": "Discover the power of relaxation techniques to manage stress and improve your overall well-being. Learn about deep breathing, progressive muscle relaxation, body scan meditation, visualization, mindfulness meditation, rhythmic movement, yoga, tai chi, and self-massage. Explore problem-focused coping strategies and tips for starting a relaxation practice.",
-        "tags": [
-            "stress management",
-            "relaxation techniques",
-            "deep breathing"
-        ],
-        "category": "HealthAndWellness",
-        "date": "2024-08-14",
-        "published": true,
-        "featured_image": "https://picsum.photos/1080",
-        "author": "Rina",
-        "slug": "StressManagementAndRelaxationTechniques",
-        "readingTime": 18
     },
     {
         "title": "Mastering Time -  A Comprehensive Guide to Time Management Strategies for Productivity",

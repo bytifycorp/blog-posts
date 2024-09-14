@@ -28,6 +28,29 @@
         "readingTime": 7
     },
     {
+        "title": "Indian Fashion -  A Journey From Tradition to Global Influence",
+        "description": "This blog explores the evolution of Indian fashion, highlighting its rich heritage, contemporary trends like sustainability and inclusivity, challenges faced by the industry, and opportunities for growth in the global market.",
+        "tags": [
+            "Indian fashion",
+            "fashion trends",
+            "fashion industry",
+            "sustainability",
+            "inclusivity",
+            "global fashion",
+            "ecommerce",
+            "design",
+            "textiles",
+            "culture"
+        ],
+        "category": "Fashion",
+        "date": "2024-09-14",
+        "published": true,
+        "author": "Prabhat",
+        "featured_image": "https://i.ibb.co/K2F7p6r/db8956138fdb.png",
+        "slug": "IndianFashionIndustry",
+        "readingTime": 5
+    },
+    {
         "title": "Indian Tax System -  A Comprehensive Guide",
         "description": "This blog post explains the Indian tax system in detail, covering direct and indirect taxes, major tax reforms, compliance requirements, tax incentives, and key concerns for expats. It also discusses tax evasion, its impact, and government initiatives to combat it.",
         "tags": [

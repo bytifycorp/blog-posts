@@ -4,6 +4,7 @@ import os
 from datetime import date, datetime
 
 import yaml
+from slugify import slugify
 
 
 class CustomJSONEncoder(json.JSONEncoder):
@@ -64,10 +65,15 @@ def convert_all_mdx_to_json(mdx_directory, output_json_path):
                 frontmatter_data = extract_frontmatter(file_path)
                 if frontmatter_data and frontmatter_data["published"]:
                     # Use the file name (without extension) as the key
+                    # Convert name to slugify
                     file_name = os.path.splitext(file)[0]
-                    frontmatter_data["slug"] = file_name
+                    slug_name = slugify(file_name)
+                    frontmatter_data["slug"] = slug_name
                     frontmatter_data["readingTime"] = calculate_reading_time(file_path)
                     frontmatter_collection.append(frontmatter_data)
+
+                    # Rename the file with slug
+                    os.rename(file_path, file_path.replace(file_name, slug_name))
 
     # sort the collection by date here
     frontmatter_collection.sort(key=lambda x: x["date"], reverse=True)

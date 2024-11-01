@@ -1,0 +1,374 @@
+---
+title: "How to Make a Simple To-Do List with Code"
+description: "This blog post guides you through building a basic to-do list application using HTML for structure, CSS for styling, and JavaScript for interactivity. Learn the fundamental concepts and steps involved in creating a functional to-do list from scratch."
+tags: [HTML, CSS, JavaScript, To-Do List, Web Development, Beginner, Coding, Web App, Tutorial, Project]
+category: "Web Development"
+date: 2024-10-23
+published: True
+author: "Liam Anderson"
+featured_image: "https://i.ibb.co/fNdrtXD/8836df372b07.jpg"
+---
+
+## From Blank Page to To-Do List: A Beginner's Guide to Building Your Own Task Manager with Code
+
+Remember that feeling of starting a fresh project, brimming with excitement and a blank canvas before you? For me, that feeling often gets coupled with a sense of overwhelm, especially when I'm faced with a mountain of tasks, big and small, that need tackling. It's in these moments that I find myself yearning for a simple, yet effective way to organize and manage my workload.  
+
+That's where the power of a to-do list comes in. It's the ultimate tool for staying on track, boosting productivity, and achieving those goals, big and small. But sometimes, the pre-made apps just don't cut it. I crave a more tailored, personalized experience, one that reflects my unique way of working. 
+
+So, I embarked on a journey to learn how to build my own simple to-do list from scratch. It was a surprisingly rewarding experience, one that not only resulted in a functional task manager but also unlocked a whole new world of possibilities in coding.  
+
+In this blog post, I'll guide you through the process of creating a simple to-do list using HTML, CSS, and JavaScript, making it a perfect starting point for any aspiring coder. 
+
+### Step 1: The Foundation - HTML Structure
+
+The backbone of our to-do list lies in the HTML structure. It's the blueprint, defining the layout and elements that make up our application. Think of it as creating the skeleton of a house before adding the walls and decorations. 
+
+Here's the fundamental HTML structure, adapted from a set of PDFs I recently explored:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>To-Do List</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<section class="container">
+<div class="heading">
+<img class="heading_img" src="https://s3-us-west-2.amazonaws.com/s.codewithfaraz.com/project/images/to-do-list/laptop.png" alt="laptop" />
+<h1 class="heading_title">To-Do List</h1>
+</div>
+<form class="form">
+<div>
+<label class="form_label" for="todo">~ Today I need to ~</label>
+<input class="form_input" type="text" id="todo" name="to-do" size="30" required>
+<button class="button"><span>Submit</span></button>
+</div>
+<ul class="toDoList">
+</ul>
+</div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
+```
+
+Let's break it down:
+
+1.  **`<!DOCTYPE html>`**: This line tells the browser that this is an HTML5 document, ensuring proper rendering and compatibility.
+2.  **`<html lang="en">`**: This is the root element of our HTML document. The `lang` attribute specifies the language of the content, in this case, English. 
+3.  **`<head>`**: The head section contains meta information about the document, like the title, character encoding, and links to external resources, such as stylesheets.
+4.  **`<title>To-Do List</title>`**: This defines the title of the webpage, which appears in the browser's title bar or tab.
+5.  **`<meta charset="UTF-8" />`**: This ensures that the document is displayed correctly across various browsers and operating systems, handling different character sets, including special symbols.
+6.  **`<meta name="viewport" content="width=device-width" />`**:  This is crucial for responsive web design. It tells the browser to adjust the width of the webpage to the device's screen width, making it look great on desktops, tablets, and smartphones.
+7.  **`<link rel="stylesheet" href="styles.css" />`**: This line links the HTML document to an external CSS file named "styles.css."  This file will contain all the styling rules that define the look and feel of our to-do list.
+8.  **`<body>`**: The body section contains the visible content of the webpage. 
+9.  **`<section class="container">`**: This is a container element that groups related content. It's helpful for organizing elements and applying styles to a specific section.
+10. **`<div class="heading">`**: This division contains the header section. It's used to group the title and image, making them visually distinct.
+11. **`<img class="heading_img" src="..." alt="laptop" />`**: This is an image element, displaying an image of a laptop. The `src` attribute specifies the path to the image, and the `alt` attribute provides alternative text for users who cannot see the image. 
+12. **`<h1 class="heading_title">To-Do List</h1>`**: This is a heading element, used to display the title of the to-do list. It's styled using the `heading_title` class. 
+13. **`<form class="form">`**: This is a form element that contains the input field and button.
+14. **`<label class="form_label" for="todo">~ Today I need to ~</label>`**: This label is associated with the input field. It provides a description or prompt for the user, making the form more user-friendly.
+15. **`<input class="form_input" type="text" id="todo" name="to-do" size="30" required>`**: This is a text input field, allowing users to enter their tasks. It has attributes like `id` and `name` for referencing in JavaScript.
+16. **`<button class="button"><span>Submit</span></button>`**:  This button is used to submit the inputted task. It is styled with the `button` class. The `<span>` element within the button is used for stylistic purposes, often to control the button's appearance.
+17. **`<ul class="toDoList">`**: This is an unordered list element.  It will hold the list of to-do items, which will be dynamically added using JavaScript.
+18. **`<script src="script.js"></script>`**: This line links the HTML document to an external JavaScript file named "script.js."  This script will contain the code that adds interactivity and functionality to our to-do list, making it dynamic and responsive.
+
+### Step 2: Styling with CSS
+
+Now that we have the basic structure in place, let's add some flair to our to-do list.  This is where CSS comes in, acting as a stylist, giving our page a polished look.  Think of it as adding the finishing touches and personality to our house.
+
+Here's a snippet of CSS code that I used to style the to-do list:
+
+```css
+@import url("https://fonts.googleapis.com/css?family=Gochi+Hand");
+
+body {
+background-color: #a39bd2;
+min-height: 70vh;
+padding: 1rem;
+box-sizing: border-box;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #494a4b;
+font-family: "Gochi Hand", cursive;
+text-align: center;
+font-size: 130%;
+}
+
+@media only screen and (min-width: 500px) {
+body {
+min-height: 100vh;
+}
+}
+
+.container {
+width: 100%;
+height: auto;
+min-height: 500px;
+max-width: 500px;
+min-width: 250px;
+background: #f1f5f8;
+background-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
+background-size: 25px 25px;
+border-radius: 20px;
+box-shadow: 4px 3px 7px 2px #00000040;
+padding: 1rem;
+box-sizing: border-box;
+}
+
+.heading {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin-bottom: 2rem;
+}
+
+.heading_title {
+transform: rotate(-10deg);
+font-size: 2.5rem;
+margin-bottom: 1rem;
+border-bottom: 5px solid #e2a1a1;
+border-radius: 10px;
+background-color: #e88585;
+}
+
+@media only screen and (min-width: 500px) {
+.heading_title {
+font-size: 3.5rem;
+}
+}
+
+.form_label {
+margin-bottom: 1rem;
+}
+
+.form_input {
+box-sizing: border-box;
+background-color: white;
+font-size: 1.15rem;
+padding: 0.5rem 1rem;
+margin: 0.25rem;
+border-radius: 25px;
+outline: none;
+border: none;
+}
+
+@media only screen and (min-width: 500px) {
+.form_input {
+width: 450px;
+}
+}
+
+.button {
+background-color: #494a4b;
+color: white;
+padding: 0.5rem 1.5rem;
+border: none;
+border-radius: 15px;
+box-shadow: 4px 3px 7px 2px #00000040;
+transform: rotate(5deg);
+font-size: 1rem;
+cursor: pointer;
+}
+
+.button span {
+background-color: #b83030;
+color: white;
+padding: 0.5rem 1.5rem;
+border: none;
+border-radius: 10px;
+}
+
+.button:active,
+.button:focus {
+transform: scale(0.93);
+box-shadow: 0 0 6px rgba(0,0,0,0.15);
+transition: transform 0.2s ease;
+}
+
+.toDoList {
+list-style: none;
+text-align: left;
+}
+
+.toDoList li {
+padding: 1rem 0;
+}
+
+.toDoList li:hover {
+text-decoration: line-through wavy;
+color: #e88585;
+}
+
+.item {
+padding: 0.5rem;
+margin-bottom: 1.5rem;
+border-bottom: 4px solid #e2a1a1;
+}
+
+.item_input {
+background: none;
+outline: none;
+color: #494a4b;
+border: none;
+width: 350px;
+font-size: 1.4rem;
+}
+
+.editButton,
+.removeButton {
+font-size: 1.4rem;
+margin: 0 0.75rem;
+background: none;
+outline: none;
+color: white;
+border: none;
+cursor: pointer;
+}
+
+.editButton:hover,
+.removeButton:hover {
+color: #b83030;
+font-size: 1.5rem;
+}
+```
+
+Let's break down this code to see how we can give our to-do list a stylish makeover:
+
+1.  **`@import url("https://fonts.googleapis.com/css?family=Gochi+Hand");`**: This line imports a Google Fonts stylesheet, adding the "Gochi Hand" font to our page. This gives our to-do list a unique and playful font style.
+2.  **`body { ... }`**: This block styles the entire body of the webpage. It sets the background color to `#a39bd2` (a soft, pinkish purple), sets the minimum height, padding, box-sizing, and aligns the content using `display: flex;` and `justify-content: center;` and `align-items: center;` to center the content. It also defines the font color, font family, and text-align, giving it a cohesive look.
+3.  **`@media only screen and (min-width: 500px) { ... }`**: This media query ensures that the layout adapts to different screen sizes. In this case, when the screen width is 500px or larger, the minimum height of the body is adjusted to take up the full viewport height, giving it a more immersive feel.
+4.  **`.container { ... }`**: This class styles a container element, setting its width, minimum and maximum width, background color, border-radius, box-shadow, and padding. It also adds a radial gradient background pattern, adding depth and visual interest.
+5.  **`.heading { ... }`**: This class styles the heading section, ensuring it's centered horizontally and vertically. It also adds a margin at the bottom, giving it some breathing room.
+6.  **`.heading_title { ... }`**: This class styles the main title, giving it a rotated appearance, rounded border, background color, and font size. The media query within this class increases the font size for larger screens, making it more prominent.
+7.  **`.form_label { ... }`**: This class styles the label associated with the input field, adding a margin at the bottom for better spacing.
+8.  **`.form_input { ... }`**: This class styles the input field, setting its box-sizing, background color, font size, padding, margin, border-radius, outline, and border. The media query within this class adjusts the width of the input field for larger screens, ensuring it's readable and accessible.
+9.  **`.button { ... }`**: This class styles the "Submit" button, setting its background color, font color, padding, border, border-radius, box-shadow, transform, font size, and cursor. The transform property slightly rotates the button for a more dynamic effect.
+10. **`.button span { ... }`**: This class styles the text within the button, setting its background color, font color, padding, border, and border-radius.
+11. **`.button:active, .button:focus { ... }`**: These styles define the appearance of the button when it is active (clicked) or focused (selected), subtly changing its transform and box-shadow.
+12. **`.toDoList { ... }`**: This class styles the unordered list where the to-do items will be displayed, aligning the text to the left.
+13. **`.toDoList li { ... }`**: This class styles individual list items within the unordered list, adding padding.
+14. **`.toDoList li:hover { ... }`**: This style is applied when hovering over a list item, adding a line-through decoration with a wavy effect and changing the color, making it visually clear that this item has been viewed.
+15. **`.item { ... }`**: This class styles the individual to-do list items, setting its padding, margin, and border-bottom.
+16. **`.item_input { ... }`**: This class styles the input field within each to-do list item, setting its background, outline, color, border, width, and font size.
+17. **`.editButton, .removeButton { ... }`**: These classes style the edit and delete buttons, setting their font size, margin, background, outline, color, border, and cursor.
+18. **`.editButton:hover, .removeButton:hover { ... }`**: These styles define the appearance of the edit and delete buttons when the cursor hovers over them, changing the color and font size to make them more noticeable.
+
+### Step 3:  Adding Interactivity with JavaScript
+
+Now comes the magic - JavaScript. This is the script that brings our to-do list to life, adding interactivity and functionality. Think of it as the brain of our house, controlling everything from the lights to the appliances.
+
+Here's a snippet of JavaScript code adapted from the PDFs I studied:
+
+```javascript
+// IEFE
+(() => {
+// state variables
+let toDoListArray = [];
+// ui variables
+const form = document.querySelector(".form");
+const input = form.querySelector(".form_input");
+const ul = document.querySelector(".toDoList");
+// event listeners
+form.addEventListener("submit", (e) => {
+e.preventDefault();
+let itemId = String(Date.now());
+let toDoItem = input.value;
+addItemToDOM(itemId, toDoItem);
+addItemToArray(itemId, toDoItem);
+input.value = "";
+});
+ul.addEventListener("click", (e) => {
+let id = e.target.getAttribute("data-id");
+if (!id) return;
+removeItemFromDOM(id);
+removeItemFromArray(id);
+});
+// functions
+function addItemToDOM(itemId, toDoItem) {
+let li = document.createElement("li");
+li.setAttribute("data-id", itemId);
+li.innerHTML = `<input type="checkbox" /> <span>${toDoItem}</span>
+<button class="editButton">Edit</button>
+<button class="removeButton">Delete</button>`;
+ul.appendChild(li);
+}
+
+function addItemToArray(itemId, toDoItem) {
+toDoListArray.push({ itemId, toDoItem });
+}
+
+function removeItemFromDOM(id) {
+let selectedTask = document.querySelector(`[data-id="${id}"]`);
+ul.removeChild(selectedTask);
+}
+
+function removeItemFromArray(id) {
+toDoListArray = toDoListArray.filter((item) => item.itemId !== id);
+}
+})();
+```
+
+Let's break down this code to see how we can make our to-do list dynamic and interactive:
+
+1.  **`// IEFE`**: This is a comment, indicating that we're using an Immediately Invoked Function Expression (IIFE).  IIFEs are a common pattern in JavaScript for creating a private scope, preventing variables from polluting the global scope.
+2.  **`(() => { ... })();`**: This is the actual IIFE structure. The code within the parentheses will be executed immediately when the script is loaded.
+3.  **`// state variables`**: This is another comment, indicating the declaration of state variables, which are variables that hold the current state of the application.
+4.  **`let toDoListArray = [];`**: This line declares an empty array named `toDoListArray`.  This array will store the to-do items entered by the user.
+5.  **`// ui variables`**: This comment indicates the declaration of UI variables, which are variables that refer to elements in the HTML structure.
+6.  **`const form = document.querySelector(".form");`**: This line selects the form element from the HTML document, storing it in the `form` variable for later use.
+7.  **`const input = form.querySelector(".form_input");`**: This line selects the input field within the form, storing it in the `input` variable for later use.
+8.  **`const ul = document.querySelector(".toDoList");`**: This line selects the unordered list element from the HTML document, storing it in the `ul` variable for later use.
+9.  **`// event listeners`**: This comment indicates the section where we will set up event listeners to react to user interactions.
+10. **`form.addEventListener("submit", (e) => { ... });`**: This line adds an event listener to the form element. When the form is submitted (either by pressing the Enter key or clicking the "Submit" button), the code inside the event listener function will be executed.
+11. **`e.preventDefault();`**: This line prevents the default behavior of the form, which is to reload the page. 
+12. **`let itemId = String(Date.now());`**: This line generates a unique ID for each new to-do item, using the current timestamp, and converts it to a string.
+13. **`let toDoItem = input.value;`**: This line retrieves the value entered by the user in the input field and stores it in the `toDoItem` variable.
+14. **`addItemToDOM(itemId, toDoItem);`**: This line calls the `addItemToDOM` function, passing in the generated item ID and the task text.
+15. **`addItemToArray(itemId, toDoItem);`**: This line calls the `addItemToArray` function, passing in the item ID and task text.
+16. **`input.value = "";`**: This line clears the input field, ready for the user to enter a new task.
+17. **`ul.addEventListener("click", (e) => { ... });`**: This line adds an event listener to the unordered list element. When the user clicks anywhere within the list, the code inside the event listener function will be executed.
+18. **`let id = e.target.getAttribute("data-id");`**: This line gets the `data-id` attribute from the clicked element. It is assumed that each list item has a `data-id` attribute, which corresponds to the unique ID assigned to the task.
+19. **`if (!id) return;`**: This line checks if the clicked element has a `data-id` attribute. If it doesn't, the function returns, preventing further execution. This ensures that the event listener only responds to clicks on to-do list items and not other elements within the list.
+20. **`removeItemFromDOM(id);`**: This line calls the `removeItemFromDOM` function, passing in the retrieved item ID.
+21. **`removeItemFromArray(id);`**: This line calls the `removeItemFromArray` function, passing in the retrieved item ID.
+22. **`// functions`**: This comment indicates that the following section contains function definitions.
+23. **`function addItemToDOM(itemId, toDoItem) { ... }`**: This function creates a new list item (li) element, assigns it a `data-id` attribute with the provided item ID, sets the inner text of the list item to the provided to-do item text, adds the edit and delete buttons, and appends the list item to the unordered list.
+24. **`function addItemToArray(itemId, toDoItem) { ... }`**: This function adds a new object to the `toDoListArray` array, where each object represents a to-do item with its associated item ID and to-do item text. This ensures that the to-do list data is persistently stored in the `toDoListArray` array.
+25. **`function removeItemFromDOM(id) { ... }`**: This function finds the list item element with the specified data-id attribute (id) and removes it from the unordered list. This is responsible for visually removing the item from the to-do list on the page.
+26. **`function removeItemFromArray(id) { ... }`**: This function filters the `toDoListArray` array to exclude the object with the matching item ID, effectively removing the corresponding to-do item from the array. This ensures that the data in the `toDoListArray` array is updated to reflect the removal of the to-do item from the list.
+
+### Frequently Asked Questions:
+
+Here are some frequently asked questions I've encountered while building my own to-do list and helping others through this process:
+
+**Q: What if I want to add an "Edit" feature to my to-do list?**
+
+**A:**  Editing to-do items is a great way to keep your list accurate and up-to-date. You can achieve this by adding an "Edit" button to each list item and using JavaScript to toggle the input field between editable and non-editable states. When you click the edit button, it enables the input field, allowing you to make changes. Saving the changes involves updating the list item and the corresponding data in your JavaScript array.
+
+**Q: How can I make my to-do list more visually appealing?**
+
+**A:**  There's a world of possibilities when it comes to styling your to-do list! You can experiment with different color palettes, fonts, backgrounds, and even animations to make it visually engaging. Using CSS, you can control every aspect of the appearance, from the size and shape of buttons to the spacing between elements.
+
+**Q: What if I want to save my to-do list so I don't lose it when I refresh the page?**
+
+**A:**  Storing your to-do list data is essential!  You can use local storage in your browser to persist data, even when you close the browser window.  Local storage is a simple way to store small amounts of data locally on the user's computer. The data is stored in key-value pairs, allowing you to easily save and retrieve your to-do list items.
+
+**Q: How can I make my to-do list more advanced, with features like filtering or sorting?**
+
+**A:**  Adding advanced features like filtering and sorting allows you to manage your tasks more effectively. You can use JavaScript to create filters based on the status (e.g., completed, pending), priority, or due date. Sorting allows you to organize tasks alphabetically, by priority, or by due date. Implementing these features requires additional logic in your JavaScript code to manage the filtering and sorting operations.
+
+**Q: How can I share my to-do list with others?**
+
+**A:**  While building a simple to-do list is a great start, sharing your tasks with others requires more advanced techniques. You can use a server-side language like Node.js or Python to create a backend for your to-do list application, enabling features like user authentication, data storage in a database, and real-time updates for collaborators. This involves learning more advanced web development concepts and technologies.
+
+**Conclusion**
+
+Building a simple to-do list application is a fantastic way to dive into the world of web development. It combines the structure of HTML, the styling power of CSS, and the dynamic nature of JavaScript to create a practical and engaging application.  While this journey may seem daunting at first, the rewards are immense - a sense of accomplishment, a valuable skill for your repertoire, and a personalized tool to help you manage your tasks effectively.
+
+Remember, this is just the beginning. The world of web development is vast and full of endless possibilities. Embrace the learning process, enjoy the journey, and you'll be surprised at how much you can create.  Keep coding, keep exploring, and keep building amazing things!

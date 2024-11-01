@@ -1,0 +1,245 @@
+---
+title: "How to Clean Data for Better Analysis"
+description: "Learn about the importance of data cleansing for better data analysis. Discover various data cleaning techniques, tools, and best practices to transform messy data into actionable insights."
+tags: [data cleaning, data analysis, data quality, data governance, data management, business intelligence, machine learning, AI, data profiling, data validation, data integrity, data cleansing tools, data cleansing techniques, data cleansing process, data cleansing steps]
+category: "Data Science"
+date: 2024-09-13
+published: True
+author: "Zane Wilson"
+featured_image: "https://i.ibb.co/jRjCdcW/6138bc69d14b.jpg"
+---
+
+
+Have you ever heard the saying, "Garbage in, garbage out?"  It's a timeless truth, especially in the world of data analysis.  Imagine you're meticulously crafting a complex financial model, analyzing a huge customer database, or building a powerful machine learning algorithm.  You spend hours pouring over data, crunching numbers, and drawing conclusions. But what if the data itself is flawed? What if it's riddled with errors, inconsistencies, and missing values?  That's where data cleaning comes in.  It's the unsung hero of data analysis, the crucial process that transforms raw, messy data into clean, reliable, and actionable insights.
+
+## **Why Clean Data Matters**
+
+Think of data like a precious resource, like a beautiful, clear spring that provides fresh, life-sustaining water.  However, just like a spring can become contaminated with pollutants, data can be corrupted, inaccurate, incomplete, or riddled with duplicates.  If we drink from a contaminated spring, we risk falling ill.  Similarly, if we try to analyze data that hasn't been cleaned, we risk drawing false conclusions, making bad decisions, and wasting valuable resources. 
+
+Let's explore the importance of clean data:
+
+* **Enhanced Data Quality:** Just like a well-maintained engine runs smoothly, clean data ensures that machine learning models and algorithms perform optimally, leading to better predictive accuracy.  Cleaning makes sure the data is accurate, dependable, and consistent.  It's like removing rust and grime from a machine, allowing it to function at its peak performance.
+
+* **Improved Accuracy of Analysis:**  Uncleaned data often contains errors, inconsistencies, and inaccuracies, which can significantly skew analytical results and misguide decision-making.  It's like trying to build a house on a shaky foundation – the whole structure is compromised.  Clean, accurate data leads to more precise and trustworthy analysis, forming a solid foundation for informed decisions and insightful conclusions.
+
+* **Effective Decision-Making:** Analyzing and presenting unclean data can reduce the credibility of the analysis and those responsible for it.  It's like presenting a flawed product – stakeholders may lose trust in the findings.  Decision-making is supported by trustworthy data that is free of biases and inaccuracies.  It's like having a clear blueprint – managers and stakeholders can confidently rely on the results of analyses based on clean data.
+
+* **Avoidance of Biased Insights:**  Inaccuracies in data can introduce biases that skew analysis and conclusions.  It's like looking through a distorted lens – you might miss crucial information or draw incorrect inferences.  Data containing biases, such as imbalances, duplicate records, or incomplete entries, can result in biased conclusions that may favor a particular group or perspective.  Data cleaning helps mitigate these biases and ensures that the insights drawn are representative and unbiased.
+
+* **Increased Productivity and Efficiency:** Working with inaccurate data can be time- and resource-consuming.  It's like trying to work on a cluttered desk – you're constantly distracted and slowed down.  Analyzing raw, uncleaned data can slow down the analysis process and introduce complexities.  Data cleaning streamlines the analysis process by removing unnecessary obstacles, allowing analysts to focus on deriving insights rather than correcting errors.
+
+* **Better Data Integration:**  Data frequently comes from various sources. It's like trying to fit different puzzle pieces together – if they don't match, the picture is incomplete.  When data is not properly standardized and cleaned, integrating it with other datasets can become challenging.  Data cleaning facilitates smooth integration by aligning data formats, resolving inconsistencies, and ensuring compatibility across various datasets.
+
+* **Compliance and Reporting:**  Incomplete or inconsistent data can misrepresent trends or patterns, causing a misinterpretation of the underlying phenomena.  It's like reading a distorted map – you might end up in the wrong place.  This misrepresentation can lead to erroneous assumptions and flawed strategies.  In regulated industries or contexts where data compliance is critical, having clean and accurate data is essential for meeting regulatory requirements and producing accurate reports.
+
+* **Cost Savings:**  Data cleaning reduces unnecessary costs associated with erroneous data, such as marketing to incorrect addresses or targeting the wrong audience.  It's like fixing a leak in a pipe – you're preventing further damage and waste.  Analyzing unclean data can lead to wasted resources and time spent on investigating false leads, correcting errors, and redoing analyses.  Correcting errors early in the data lifecycle is typically more cost-effective than addressing issues later, especially after analysis or when errors have propagated throughout the organization.
+
+## **Common Data Cleaning Techniques**
+
+Data cleaning is essential for unlocking the true value of data. Here's a breakdown of some common techniques:
+
+1. **Handling Missing Values:** Datasets frequently have missing values. It's like having a puzzle with missing pieces. Data scientists utilize various approaches to handle these gaps, including:
+
+    * **Deletion of Rows or Columns:** Remove rows or columns with missing values. This is suitable if the amount of missing data is very small and won't significantly affect the analysis.  Think of it as discarding a few puzzle pieces that aren't essential to completing the picture.
+
+    * **Imputation:** Fill in any missing values using the mean (average), median (middle value), or mode (most frequent value) of the non-missing values in the column.  Imagine replacing a missing puzzle piece with a similar one from the box.
+
+    * **K-Nearest Neighbors (K-NN) Imputation:** Fill in missing values using the values of the k-nearest neighbors in the feature space. Based on the average of the values from the nearest neighbors, the missing values are imputed. It's like looking at similar puzzle pieces to find the best fit.
+
+2. **Outlier Detection and Treatment:**  Data points that deviate significantly from other observations are known as outliers. It's like a stray piece that doesn't fit the overall pattern of the puzzle. Outliers can distort analysis and models. Techniques like the Z-score method or the IQR (interquartile range) method help identify and handle outliers appropriately, ensuring they don't skew the analysis.
+
+    * **Visual Inspection:** Calculate summary statistics (e.g., mean, median, standard deviation, quartiles) to understand the central tendency and spread of the data. Unusually large or small values could indicate outliers.  Use histograms, box plots, or scatter plots to visualize and spot outliers. Think of it as examining the puzzle pieces to see if anything looks out of place.
+
+    * **Statistical Methods:** Employ statistical techniques like Z-score or IQR (interquartile range) to detect and handle outliers, either by removal or transformation. Calculate the Z-score for each data point. Data points with a Z-score beyond a threshold (e.g., 3) are considered outliers.  The difference between the first quartile (Q1) and the third quartile (Q3) is known as the IQR. Outliers fall outside the range defined by Q1–1.5 * IQR and Q3 + 1.5 * IQR.  Imagine carefully inspecting each piece to ensure it fits within the overall design of the puzzle.
+
+3. **Data Transformation and Standardization:**  Data transformation involves converting data into a format that is acceptable for analysis. It's like preparing puzzle pieces before they can be assembled – you might need to cut them, shape them, or add extra details. This may include scaling features, encoding categorical variables, or creating new features that are more informative for the intended analysis.  Standardizing data ensures uniformity and consistency, simplifying subsequent analysis.
+
+    * **Scaling:** Scale numerical features to a specific range (e.g., [0, 1] or [-1, 1]) to provide equal importance to all features.  Think of it as resizing all the puzzle pieces to the same scale.
+
+    * **Normalization and Standardization:** Normalization scales the features between 0 and 1, while standardization transforms the data to have a mean of 0 and a standard deviation of 1, making it easier to compare and analyze.  Imagine fitting all the puzzle pieces into a specific frame.
+
+4. **Removing Duplicates:**  Duplicate data can lead to misleading analyses. It's like having multiple identical pieces in a puzzle – you can't complete the picture with just one. Data deduplication techniques identify and remove duplicate records, ensuring that each data point is unique and contributes meaningfully to the analysis.  Duplicate records can bias results and skew analyses.
+
+    * **Identify Duplicate Rows:** Compare each row in the dataset to determine if it is a duplicate of another row. Duplicates can be found by looking at particular columns or an entire row.  Imagine carefully comparing each piece to see if there are any exact matches.
+
+    * **Remove Duplicates:** Keep only the first occurrence or a randomly selected instance while removing duplicate records.  Imagine selecting only one of the duplicate pieces and discarding the rest.
+
+    * **Check for Fuzzy Duplicates:** Sometimes duplicates may not be exact but can be similar. Consider using techniques like fuzzy matching to identify and remove similar records.  Imagine carefully examining pieces that look similar to see if they are actually duplicates.
+
+5. **Text Data Cleaning:**  For text-based data, techniques like removing stop words, stemming, lemmatization, and handling special characters are crucial to prepare the text for analysis, sentiment analysis, or natural language processing.  It's like cleaning up a messy sentence before you can understand it.
+
+    * **Tokenization:** Break the text into smaller units, such as words or sentences.  Tokenization aids in text organization for additional processing.  Imagine separating each word or phrase into its own distinct unit.
+
+    * **Removing Special Characters:** Eliminate special characters, symbols, and non-alphanumeric characters that don't contribute to the meaning of the text.  Imagine removing punctuation or symbols that don't add to the overall meaning of the sentence.
+
+    * **Removing Stop Words:** Stop words are commonly occurring words in a language that do not carry significant meaning.  Eliminate common and non-informative words (e.g., "and, " "the, " and "is") that do not provide meaningful insights for analysis. Removing stop words helps reduce the dimensionality of the text data and focus on the more informative terms.  Imagine removing unnecessary filler words from a sentence to make it more concise.
+
+    * **Lemmatization and Stemming:**  Reduce words to their root or base form (stemming) or transform them to their dictionary form (lemmatization). This helps standardize variations of words.  Imagine converting different forms of a word (like "run," "running," "ran") to their base form ("run") for consistency.
+
+6. **Handling Inconsistent Data:**  Inconsistencies in data formatting or values can hinder analysis.  It's like trying to build a puzzle with pieces that don't fit together – you can't see the whole picture.  To make sure the data is accurate, dependable, and appropriate for analysis or other uses, it is necessary to handle inconsistent data.  Data input errors, differing information formats, divergent standards, or the integration of data from numerous sources are just a few causes of inconsistent data.
+
+    * **Identify Inconsistencies:**  Begin by thoroughly examining the dataset to identify inconsistencies, including discrepancies, errors, or anomalies in the data.  Think of it as examining each puzzle piece to see if it fits with the others.
+
+    * **Data Formatting:** Standardize date formats, capitalization, and other conventions to maintain uniformity.  Ensure that data follows consistent formats for dates, times, currency, units, and other relevant formats.  Convert inconsistent data to the desired format. Imagine making sure all the puzzle pieces are the same size and shape.
+
+    * **Data Validation Rules:** Define and apply validation rules to ensure data adheres to predefined patterns or constraints.  Implement validation rules to ensure that the data adheres to predefined criteria, such as a range of valid values or required fields.  Imagine making sure that all the puzzle pieces have the correct number of sides and edges.
+
+7. **Feature Engineering and Selection:**  To create powerful machine learning models, feature engineering and selection are essential tasks.  It's like designing a puzzle – you need to choose the right pieces and arrange them in a way that creates a meaningful picture.
+
+    * **Creating New Features:** Generate new features based on existing ones, potentially enhancing the predictive power of the dataset. Transform existing features using mathematical operations (e.g., logarithm, square root) to make them more suitable for the model.  Convert continuous variables into categorical bins to capture patterns that might be missed otherwise.  Encode categorical variables into binary values (0s and 1s) to make them compatible with machine learning algorithms.  Imagine combining multiple puzzle pieces to create a larger, more complex piece.
+
+    * **Feature Selection:** Choose the most relevant features to reduce noise and improve model performance.  To determine the most influential features, compute correlations between the feature and the target variable. To rank features according to how relevant they are to the goal variable, use statistical tests or information gathering. Utilize methods like principal component analysis (PCA) or singular value decomposition (SVD) to decrease the feature space’s dimensionality while preserving the most crucial data.  Imagine carefully selecting the most important puzzle pieces and discarding the rest.
+
+8. **Addressing Class Imbalance (for Classification Tasks):** Class imbalance in a classification task occurs when the number of instances in each class significantly differs, potentially leading to biased models that favor the majority class. It's like having a puzzle where most of the pieces are blue, and only a few are red – the model might be biased towards blue. Addressing this imbalance is crucial to creating models that can make accurate predictions for all classes.
+
+    * **Oversampling:** Duplication or synthetic generation can be used to increase the proportion of occurrences in the minority class. To balance the distribution of classes, duplicate instances from the minority class at random. Create artificial data points by using methods such as SMOTE (Synthetic Minority Over-sampling Technique).  Imagine adding more red pieces to the puzzle to balance the number of colors.
+
+    * **Undersampling:** To establish balance, lower the number of instances in the majority class. To restore balance to the class distribution, arbitrarily eliminate instances from the dominant class. Be cautious not to remove too much information, which can lead to underrepresentation of the majority class.  Imagine removing some blue pieces from the puzzle to balance the number of colors.
+
+    * **Class Weighting:** Assign higher weights to the minority class during model training to give it more importance. Many classification algorithms allow for class weights to be specified, which can help mitigate the impact of class imbalance. Imagine giving the red pieces more weight in the puzzle to balance the overall picture.
+
+    * **Ensemble Techniques:** Use ensemble methods like bagging (e.g., Random Forest) or boosting (e.g., AdaBoost, XGBoost) that can handle class imbalance by combining predictions from multiple weak learners.  Imagine combining multiple different puzzles to create a larger, more balanced picture.
+
+## **Data Cleaning Tools and How to Choose Them**
+
+Finding the perfect data cleaning tool can significantly streamline your workflow.  It's like having the right tools for the job – it makes the task easier, faster, and more efficient. Here are some key things to consider when choosing a data cleaning tool:
+
+* **Manual Data Cleaning:** Manual data cleaning is challenging because it's a tedious process prone to error.  It's like cleaning a messy house by hand – it can be time-consuming, tiring, and prone to mistakes. It can be incredibly time-consuming, especially with large datasets. The repetitive nature of the task can lead to fatigue and reduced concentration over time. Besides, some data issues may be complex and not easily identifiable.  Unsurprisingly, cleaning and organizing data is considered the least enjoyable part of data science. Nevertheless, manual data cleaning can be viable for small to medium-sized data volumes.
+
+* **Ready-Made Tools that Don't Require Coding:**  If a company's data team has no data engineers, and its data analysts don't have the programming skills to handle data quality assurance, ready-made software will come in handy.  It's like using a pre-made meal kit – it requires less effort and expertise.  Here are a few popular options:
+
+    * **OpenRefine:** An open-source desktop application for data cleanup and transformation to other formats, its key features are faceting and filtering data, clustering algorithms for data deduplication, transformation expressions, and reconciliation with external data sources.  Think of it as a comprehensive tool with a user-friendly interface that helps you clean and transform data in various ways.
+
+    * **Tableau Prep:** Explicitly designed for data preparation and cleaning. It consists of two main components: Tableau Prep Builder, which provides a visual and direct way to combine, shape, and clean data from multiple sources, and Tableau Prep Conductor, used for scheduling and managing data flows created in Tableau Prep Builder.  Think of it as a visual tool that simplifies the process of cleaning and preparing data for analysis.
+
+    * **Alteryx Designer:** The product offers a wide range of features for data cleaning, such as filtering, sorting, deduplication, and transformation tools. The drag-and-drop interface is perfect for users without extensive technical skills.  Think of it as a versatile and user-friendly tool that automates many data cleaning tasks.
+
+    * **WinPure Clean&Match:** This platform has a comprehensive range of features, including data deduplication, standardization, and validation, all in an easy-to-use interface. The sophisticated fuzzy matching algorithms identify duplicates and inconsistencies, even in large datasets.  Think of it as a robust tool that can handle large and complex data cleaning tasks.
+
+    * **Validity DemandTools:** This data quality platform is designed to manage Salesforce data, so it’s a good choice if your company relies on this CRM.  The features include deduplication, standardization, email verification, merging accounts and contacts, etc. Users can schedule data cleaning tasks to run automatically, ensuring that data is regularly updated and cleaned.  Think of it as a specialized tool that helps you maintain the quality of data within a specific platform.
+
+* **Big Tools for Big Data:** Database management systems (such as Oracle Database, Microsoft SQL Server, MySQL, etc.) and data pipeline products (such as Google Cloud Dataflow, Apache Spark, Microsoft Azure Data Factory, AWS Glue, Talend Data Integration, etc.) always include features related to data hygiene.  Hundreds of companies produce such software, and the final choice depends on the tasks that a particular business and team of data engineers, data analysts, or data scientists face.  It's like having a robust toolkit for all your data cleaning needs.
+
+## **Why Data Cleaning is Essential: A Real-Life Example**
+
+Let's go back to the metaphor of data as water.  Dirty water can be unpleasant, but not necessarily dangerous. Water containing bitter mineral salts or chalk may look cloudy and taste unpleasant, but it can still quench your thirst without causing illness.  On the contrary, clear water can be dangerous if it contains harmful bacteria.  The same applies to dirty data:  Sometimes errors have minimal impact on results, but other times, poor data hygiene can have severe consequences.
+
+One of the most dramatic stories to illustrate this stems from accounting errors at the British postal company, Post Office Limited. Due to bugs and data corruption, Fujitsu's Horizon accounting software incorrectly calculated amounts received from lottery terminals and ATMs, leading to apparent shortfalls that were blamed on Post Office employees. These massive software failures resulted in the wrongful conviction of more than 700 postal supervisors for theft and fraud between 1999 and 2015.  The consequences were dire, including prison sentences, debt, bankruptcies, and several suicides.  Judicial and journalistic investigations into the case lasted for many years, sparking a huge public outcry. The story inspired a TV series, "Mr. Bates vs. the Post Office,” which premiered in early 2024. Since then, several other postmasters have appealed their convictions that have not yet been overturned.  Another outcome of the scandal was that the British Computer Society, the organization for IT professionals in the UK, called for a review of the courts' default assumption that computer data is always correct.  It's hard to argue with that.  Data is rarely 100 percent accurate.  However, after reading this article, you can understand the importance of regular data hygiene and know where to start to achieve better data quality.
+
+## **Data Cleaning Steps and Techniques**
+
+Techniques for maintaining data quality vary widely depending on the type of data your company stores and the task at hand: cleaning an address book, reporting on a marketing experiment, or preparing quality input data for machine learning models. Because of this, there's no one-size-fits-all approach or universal template for the data cleaning process. However, you can focus on common issues that frequently arise in data collection and storage.  To ensure data quality, you must either prevent these issues from occurring in your dataset or address them when they do.
+
+Therefore, the first step is always the same: Examine the data, explore what you have, and use your domain knowledge and professional intuition to identify problem areas.  There could be hundreds of them, but we will focus on just a few of the main types of “dirty data” and how to deal with them.  
+
+Here are the essential steps involved in data cleaning:
+
+1. **Remove Irrelevant Data:** Begin by reviewing your dataset to identify and remove any data that does not contribute to your analysis objectives.  Think of it as clearing clutter from your workspace to create a clean and organized environment.  This could include columns or rows that are not relevant to the specific business questions or analysis goals you are addressing.  Establish clear criteria for what constitutes relevant data based on the purpose of your analysis. For instance, if you are analyzing customer data, fields like ‘customer ID’ and ‘purchase history’ might be relevant, while ‘middle name’ might not be.  Use AI tools to automate the identification of irrelevant data, but ensure you manually review the results to avoid excluding potentially useful information inadvertently.
+
+2. **Deduplicate Redundant Data:** Scan your dataset for duplicate records, which are common in large datasets and can skew analysis results. Duplicates often occur when data is collected from multiple sources or entered manually multiple times. It's like removing duplicate pieces from a puzzle – you only need one of each piece. Use automated tools to flag duplicate entries by comparing key identifiers like unique IDs or other distinguishing attributes. Once identified, remove or consolidate these duplicates.  After using AI tools, manually check a sample of the flagged duplicates to confirm accuracy and ensure that no unique data points are incorrectly removed.
+
+3. **Repair Structural Errors:**  Look for inconsistencies in data structure, such as inconsistent naming conventions, formatting errors, or misplaced data. Common structural issues include typos, incorrect capitalization, and different date formats.  Think of it as fixing any misaligned or broken pieces in the puzzle.  Use data-cleaning software or AI tools to standardize the structure across your dataset.  For example, ensure that all dates follow a consistent format (e.g., YYYY-MM-DD) and that categorical data uses standardized labels.  Review the corrections made by the AI tools, especially in areas where human judgment is required to determine the correct format or structure.
+
+4. **Address Missing Data:** Identify any gaps or missing values within your dataset, which could lead to biased or inaccurate analysis results.  Missing data might be represented as blanks, ‘NaN’, or special characters like ‘?’. Think of it as finding missing pieces in your puzzle.  Depending on the extent of the missing data, decide whether to remove the affected rows, fill them with a calculated value (e.g., mean, median), or use advanced techniques like imputation via AI models.  Leverage AI tools that can intelligently predict and fill in missing data based on patterns within the dataset. However, ensure a final manual check is conducted to confirm the appropriateness of the AI-generated values.
+
+5. **Filter Out Data Outliers:**  Outliers are data points that significantly deviate from the norm and can distort your analysis. It's like a piece that doesn't belong in the puzzle.  Use statistical methods or AI algorithms to identify these anomalies.  Determine whether the outliers are errors that need correction, values that should be excluded, or important data points that should be kept (e.g., a significant sales spike).  While AI can automate outlier detection, it’s important to manually review these points to ensure that valid data isn’t mistakenly removed.
+
+6. **Validate That the Data Is Correct:**  Once the cleaning process is complete, conduct a thorough validation of the dataset to ensure all errors have been addressed. This includes running checks to confirm data consistency, accuracy, and completeness.  Think of it as carefully examining the completed puzzle to make sure all the pieces fit together correctly.  Perform random spot checks on the cleaned data to ensure the AI tools have correctly identified and rectified all issues.  This step is crucial for maintaining data integrity.  Keep detailed records of the cleaning steps you’ve taken, including any decisions made during the process.  This documentation is important for transparency and reproducibility in future analyses.
+
+## **The Emerging Role of AI in Data Cleaning**
+
+Machine learning (ML) is a subfield of AI. The ML algorithm uses computational methods to learn from the datasets it processes, and the ML algorithm will gradually improve its performance as it processes more sample datasets presented to the ML algorithm. The more sample data the ML code is exposed to, the better it becomes at identifying anomalies. The ML algorithm uses supervised learning, which trains the algorithm based on sample input and output datasets labeled by humans. The second option is unsupervised learning, which allows the algorithm to find structure as it processes input datasets without human intervention. Reinforcement learning (RL) is another ML algorithm technique that uses trial and error to teach ML how to make decisions. Machine learning builds a model from sample data that allows the ML algorithm to automate decision-making based on the inputted dataset processed.  After ML algorithms have learned from sample datasets, the algorithm can correct the data using data imputation or interpolation methods to fill in missing values or labels. Imputation replaces missing data with an estimated value, and interpolation estimates the value of a data column by using a statistical method involving the values of other variables to guess the missing values. Both methods are used in ML to substitute missing values in a dataset. Data deduplication and consolidation methods are used to eliminate redundant data in a dataset.  Natural Language Processing (NLP) is another subfield of AI. It analyzes text and speech data. This AI tool can be used on text documents, speech transcripts, social media posts, and customer reviews. Natural Language Processing can extract data using an NLP model that can summarize a text, auto-correct a document, or be used as a virtual assistant.  In addition to the available AI tools used in BI and data analysis, mathematical and statistical equations complement the AI tools. These equations verify the AI results fall within an expected standard deviation. For example, numeric values that fall outside the expected standard deviation can be considered outliers and excluded from the dataset. 
+
+With AI taking over much of the data cleaning burden, your team can redirect its focus toward higher-level, strategic data analysis. This not only increases operational efficiency but also ensures that your cleaned data is more reliable, setting the stage for deeper insights and more informed business decisions.
+
+## **Data Validation and Quality Checks**
+
+A convenient method for ensuring data columns or fields contain valid data is to implement integrity constraints on the database table’s data column that the user must adhere to before the data is saved in a field. The integrity constraint is a set of rules for each data column that ensures the quality of information entered in a database is correct. The constraints include numeric values, alpha characters, a date format, or a field that must be a specific length before the data is saved in the field or data column. However, misspellings can be challenging to identify.  The integrity constraints will minimize some errors found during the data cleansing phase. A quality check performed by a human can validate correct spelling, outdated information, or outlier data still in the database. Quality checks can be routine or done before the data cleaning process occurs.
+
+## **Data Profiling**
+
+Data profiling analyzes, examines, and summarizes information about source data to provide an understanding of the data structure, its interrelationships with other data, and data quality issues. This helps companies maintain data quality, reduce errors, and focus on recurring problematic data issues. The summary overview that data profiling provides is an initial step in formulating a data governance framework.
+
+## **Normalization and Standardization**
+
+Database normalization is a database design principle that helps you create database tables that are structurally organized to avoid redundancy and maintain the integrity of the database.  A well-designed database will contain primary and foreign keys. The primary key is a unique value in a database table. A foreign key is a data column or field associated with a primary key in another table for cross-referencing the two tables.  A well-designed database table will be normalized to first (1NF), second (2NF), and third (3NF) normal forms.  There are four, five, and six normal forms, but the third normal form is the furthest we will explore. The first normal form removes data redundancy from the database table.
+
+## **Establishing a Data Governance Framework**
+
+A data governance framework should be the foundation of an effective and coherent data management program that establishes rules and procedures for proper data collection strategies, storage requirements, data quality, security, and compliance. Using a data enrichment tool as part of the governance framework can help businesses address outdated information, fill in missing information, and add more context to existing data. The four pillars of data governance are:
+
+* **Data Quality:** The accuracy and organization of business data.
+* **Data Stewardships:** Are problem solvers, creators, and protectors of the data.
+* **Data Security:** Limit and restrict data access with security measures like biometrics and multi-factor authentication, including meeting any data compliance requirements.
+* **Data Management:** Proper management of the data.
+
+The four pillars of data governance ensure all stored data is usable, accessible, and protected, including reducing errors, inconsistencies, and discrepancies.  Data governance also includes managing data catalogs, the central repositories that capture and organize metadata. The data catalog provides a comprehensive inventory of an organization’s data assets. Data governance has specific roles that delineate responsibilities.
+
+There are four data governance roles:
+
+* **Data Admin:** Responsible for implementation of the data governance program and problem resolution.
+* **Data Steward:** Responsible for executing data governance policies, overseeing data, and training new staff on policies.
+* **Data Custodian:** Responsible for storing, retaining, and securing data governance policies, monitoring access, and securing data against threats.
+* **Data Owners:** Employees in a company who are responsible for the quality of specific datasets.
+
+Data users are essential to help the organization accomplish its business goals by properly using the data.  Building a data-conscious business culture must start with upper management and flow down through the organization through regular training, strategically placed posters promoting data governance and a comprehensive introduction of a data governance training program for new hires like the cybersecurity training program.  Like cybersecurity training, data governance should be an annual training requirement.
+
+## **Comprehensive Data Management Software Recommendations**
+
+There are aggregate BI solutions that perform the full spectrum of data analysis actions, like cleansing, analyzing, and interpreting data, allowing a business to make a data-informed decision. These comprehensive BI solutions also include data governance features that enable you to manage your data from inception to the proper disposal of obsolete data, allowing businesses to manage the entire data lifecycle.
+
+* **IBM InfoSphere:** IBM InfoSphere Master Data Management solution provides a tool that all businesses can use to manage data proactively with different deployment models and accelerate insights for quick decision-making.
+
+* **Talend:** Talend’s modern data management solution provides an end-to-end platform with data integration, data integrity and governance, and application and Application Programming Interface (API) integration.
+
+* **Tibco:** Tibco’s data management platform provides a master solution that allows users to manage, govern, and share data with peers. Tibco’s management solution features hierarchy management, role-specific applications, and data authoring.
+
+## **Crucial Data Cleaning Software Features**
+
+Using business intelligence or data analysis tools without a thorough data cleansing process is a non-starter. Finding the best AI-based data cleansing software can be challenging with today’s various data cleaning applications.  The best data cleaning software must have these features to thoroughly clean data expeditiously:
+
+* **Data Profiling and Cleansing Functionality:** A data profile transformation lets a user examine the statistical details of the data structure, content, and integrity of the data. The data profiling feature uses rule-based profiling, including data quality rules, data profiling, and field profiling.  This feature allows businesses to retrieve data stored in legacy systems and identify records with errors and inconsistencies while preventing the migration of erroneous data to the target database or data warehouse.
+
+* **Advanced Data Quality Checks:** Data quality checks are rules or objects used in the information flow to monitor and report errors while processing data.  These rules and objects are active during the data cleaning and help ensure data integrity.
+
+* **Data Mapping:** Data mapping helps correctly map data from data sources to the correct target database during the transformation process. This feature provides a code-free, drag-and-drop graphical user interface that makes the process of mapping matching fields from one database to another database.
+
+* **Comprehensive Connectivity:** A data cleansing tool must support the common source data formats and data structures, including XML, JSON, and Electronic Data Interchange (EDI), which allows the electronic exchange of business information between businesses using a standardized format.
+
+* **Workflow Automation:** Workflow automation helps automate the entire data-cleaning process. This automation feature profiles incoming data, converts it, validates it, and loads it into a target database.
+
+## **A Data Cleansing Success Story**
+
+Human Resource (HR) departments, including HR analytics, are critical to successful business operations. As discussed, data can be prone to errors and inconsistencies due to human error, data integration issues, and system glitches.  Human resource departments contain employee records with Personally Identifiable Information (PII), which, if mishandled in any way, can damage a business financially, reputationally, operationally, and legally. IBM’s Cost of Data Breach Report in 2023 stated the average data breach cost was $4.45 million last year.  Using an AI data cleaning tool will improve the efficiency and consistency of the HR department’s data, and using a data cleansing guide that outlines each step in the process will help ensure success. La-Z-Boy understands the value of analytics and successfully used the Domo cloud-based management platform with advanced features like alerts that are triggered when a specific threshold is triggered, which causes a data custodian to perform a required action.  Domo’s intuitive graphical dashboard displayed information that was easy to understand and take the appropriate action. La-Z-Boy’s business intelligence and data manager understands that data analytics information begins with a repeatable data cleansing process. The repeatable process is the following:
+
+* **Identify the critical data fields**
+* **Collect the data**
+* **Remove duplicate values**
+* **Resolve empty values**
+* **Standardize the cleaning process using workflow automation**
+* **Review, adapt, and repeat on a daily, weekly or monthly basis**
+
+In addition to HR analytics, Domo’s analytics software helps with pricing, SKU performance, warranty, and shipping for more than 29 million furniture variations.
+
+## **The Minutiae of Data Analysis**
+
+Every detail of the data analysis process should be considered critical. BI solutions come with advanced AI data cleansing tools that are only effective if they have been trained to look for specific discrepancies in data. Therefore, no matter how thoroughly you think the AI tool has cleaned the data, manually reviewing the AI-cleansed data is always recommended to ensure it did not miss a unique discrepancy the AI tool was not trained to address.  The data analysis phases before and after data washing are essential.  Still, the most critical role is the data cleaning role because if any error is used to make a business decision, the mistake can range from negligible risks to catastrophic damages that can lead to business failure. Negligible risks can include a poorly planned marketing campaign, an inability to pay suppliers or customer loss.  To produce good data for decision-making, collecting and cleaning the correct data must be prioritized with attention to detail.
+
+The data governance framework begins with validating the data quality before it’s saved in a database or data warehouse. These data integrity checks must be integrated into any application that saves data. Secondly, data governance should be as essential and given as much attention as cybersecurity training.
+
+## **Frequently Asked Questions**
+
+* **What does it mean to cleanse our data?**
+Cleansing data involves identifying and rectifying errors, inconsistencies, and inaccuracies in a dataset to improve its quality, ensuring reliable results in analyses and decision-making.
+* **What is an example of cleaning data?**
+Removing duplicate records in a customer database ensures accurate and unbiased analysis, preventing redundant information from skewing results or misrepresenting the customer base.
+* **What is the meaning of data wash?**
+“Data wash” is not a standard term in data management. If used, it could refer to cleaning or processing data, but it’s not a widely recognized term in the field.
+* **How is data cleansing done?**
+Data cleansing involves steps like removing duplicates, handling missing values, and correcting inconsistencies. It requires systematic examination and correction of data issues.
+* **What is data cleansing in cyber security?**
+In cybersecurity, data cleansing involves identifying and removing malicious code or unauthorized access points from datasets to protect sensitive information and prevent cyber threats.
+* **How to clean data using SQL?**
+Use SQL commands like DELETE for removing duplicates, UPDATE for correcting values, and ALTER TABLE for modifying data structures. Employ WHERE clauses to target specific records for cleaning.
+
+Remember, data cleaning is an ongoing process, and there is no one-size-fits-all solution.  It requires a combination of technical skills, domain expertise, and a keen eye for detail.  But by mastering the art of data cleaning, you can unlock the true potential of your data, paving the way for more accurate insights, informed decisions, and ultimately, better business outcomes. 

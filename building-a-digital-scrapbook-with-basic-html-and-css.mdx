@@ -1,0 +1,114 @@
+---
+title: "Building a Digital Scrapbook with Basic HTML and CSS"
+description: "Learn how to create a digital scrapbook using basic HTML and CSS, including a detailed guide on compound grids, a powerful technique for dynamic and visually appealing layouts."
+tags: [HTML, CSS, web design, layout, grids, compound grids, digital scrapbook, coding tutorial, web development, beginner, design, web design techniques, CSS Grid, creative coding, personal projects]
+category: "Web Development"
+date: 2024-07-31
+published: True
+author: "Riley Williams"
+featured_image: "https://i.ibb.co/5hCc0L8/00a8286a5106.jpg"
+---
+
+## Building a Digital Scrapbook with Basic HTML and CSS: A Journey into Web Design Nostalgia
+
+Have you ever looked at a beautiful, intricate scrapbook and wished you could capture that same sense of artistry and personal touch online? Well, as a web developer with a passion for both design and nostalgia, I embarked on a journey to create a digital scrapbook using the foundational languages of the web: HTML and CSS. This project, inspired by a pre-school assignment for my son, took me down memory lane and unearthed the power of CSS Grid, a tool that allows for complex and creative layout possibilities. 
+
+This blog post aims to share my journey, from the initial concept to the final design, and to introduce you to the fascinating world of compound grids in CSS. Get ready to dive into a world of layouts, grids, and the satisfaction of building something uniquely your own. 
+
+### The Power of Compound Grids: A Web Design Renaissance
+
+As a web developer, I've always been fascinated by the way grids can help us create structured and visually appealing layouts.  The traditional 12-column grid, while predictable and helpful, often felt restrictive. Then I stumbled upon the concept of compound grids, and it was like a design renaissance. 
+
+Compound grids, as explained by the visionary Andy Clarke, offer a fresh perspective on grid design. Imagine taking two grids, one with four columns and another with five columns, and layering them on top of each other. This layering, or superposition, creates a more dynamic and complex grid structure, opening up a world of possibilities for rhythmic patterns and unique layouts. 
+
+### Creating a Compound Grid Generator:  Democratizing Design
+
+The idea of compound grids excited me, but the manual calculations required for more complex grids seemed like a roadblock.  I wanted a tool that would handle the heavy lifting, allowing me to explore the creative potential of compound grids without being bogged down in calculations. 
+
+So, I created a simple but powerful compound grid generator.  This tool accepts the number of columns for two separate grids, and then, through a bit of magic (and some clever code!), generates the resulting compound grid value ready to be implemented in CSS Grid. 
+
+The beauty of this tool lies in its simplicity and accessibility. It's a testament to the power of web development to create tools that empower anyone, regardless of their coding expertise, to experiment with complex design concepts. 
+
+### Building a Digital Scrapbook with CSS Grid:  A Personal Journey
+
+With a compound grid generator in hand, I set my sights on creating a digital scrapbook.  I envisioned a layout that felt both organized and slightly haphazard, reflecting the unique character of a physical scrapbook.  The compound grid approach seemed perfect for this, offering a balance of structure and unpredictability. 
+
+Using my compound grid generator, I settled on a 6/5 compound grid, which provided me with a good number of columns to work with. This grid, represented by the CSS code:
+
+```css
+grid-template-columns: 5tr 1tr 4tr 2tr 3tr 3tr 2tr 4tr 1tr 5tr;
+gap: 1rem;
+```
+
+forms the foundation of my digital scrapbook. The `grid-template-columns` property defines the number of columns and their relative widths, while `gap` sets the spacing between the columns. 
+
+### Defining Grid Rows:  Maintaining Vertical Rhythm
+
+The next challenge was to define the grid rows, making sure to create a sense of vertical rhythm. Each photo in the scrapbook would overlap slightly with the one below, and I wanted to ensure this overlap was consistent throughout the layout.  
+
+I assigned this overlap value to a custom property called `--overlap`, allowing me to easily modify it later if needed. This approach promotes consistency and helps maintain a sense of flow within the layout.
+
+```css
+.grid {
+  --verticalPadding: 2rem;
+  --overlap: 6rem;
+}
+```
+
+To ensure sufficient space above and below each photo caption, I added "padding" rows to my grid. This "padding" allows for visual breathing room between the image and the accompanying text.
+
+### Placing Items in the Grid: Navigating the Layout
+
+Now that my grid foundation was laid out, I could start placing items.  I found that using grid lines was the most intuitive approach for me.  Grid lines represent the boundaries of my grid, and by specifying the starting and ending lines for an item, I could precisely position it within the layout. 
+
+One of the key techniques I used was negative grid lines.  They allow me to place items relative to the end of the grid.  For example, `grid-column: 1 / -1;` will place an item spanning the entire column axis of my grid, from the first line to the last.
+
+###  Grid Areas:  Simplifying Layout with Named Areas
+
+When dealing with a large number of rows, using grid lines can become tedious. That's where grid areas come in.  Grid areas allow me to group rows and columns and give them a descriptive name. Then, when placing an item, I can simply reference that area.
+
+For my scrapbook, I defined a grid area called "image" by naming the starting and ending lines for the area:
+
+```css
+.item {
+  grid-area: image;
+}
+```
+
+Using grid areas, I could reference this area directly when placing my photos, which simplified my code and made it easier to understand.
+
+### Finalizing the Design:  Adding the Finishing Touches
+
+With my grid structure and item placement in place, I moved on to the final touches.  I added some decorative elements, such as a header with a navigation menu, and a footer with my social media links. 
+
+To enhance the visual appeal, I applied subtle drop shadows to some of the elements.  The drop shadow effect was achieved using CSS's `box-shadow` property.
+
+```css
+.content {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+```
+
+The resulting digital scrapbook was a testament to the power of compound grids and the expressive nature of CSS. It captured the essence of a traditional scrapbook while leveraging the dynamic possibilities of web design.  I felt a sense of accomplishment and nostalgia, knowing that I had created a digital representation of a cherished memory. 
+
+### Frequently Asked Questions 
+
+**Q: Is it possible to create more complex compound grids?**
+
+**A:** Absolutely!  While my compound grid generator is limited to a maximum of 10 columns per grid, you can extend the concept to accommodate larger, more complex layouts by manually calculating the grid values or by using a more robust compound grid generator available online.
+
+**Q:  How do I make my scrapbook responsive to different screen sizes?**
+
+**A:**  Responsiveness is an essential aspect of web design.  While my initial scrapbook layout was not responsive,  you can use CSS media queries to create different layouts for different screen sizes. This allows you to adapt the grid structure to accommodate various devices.
+
+**Q:  What are some other creative ways to use compound grids?**
+
+**A:**  The possibilities are endless! Compound grids are particularly well-suited for layouts that involve different content types, like images, text, and videos. You can use them to create unique and visually engaging layouts for landing pages, portfolio websites, product pages, and many other web design applications.
+
+### Conclusion: A Personal Reflection on Design and Nostalgia
+
+My journey into the world of compound grids and digital scrapbooking was not only a technical exercise but also a personal exploration of nostalgia and creativity.  Building a digital scrapbook using basic HTML and CSS brought me back to the fundamentals of web design and reminded me of the power of simple tools to create something truly unique. 
+
+The process of designing a digital scrapbook not only taught me about compound grids, but it also gave me a renewed appreciation for the interplay of design and technology.  The flexibility and control offered by CSS Grid have opened up new avenues for my creative explorations and reminded me of the endless potential of the web.  
+
+This blog post is just a starting point.  I encourage you to experiment with compound grids, explore the creative possibilities of CSS Grid, and unleash your inner web designer.  Happy coding!
